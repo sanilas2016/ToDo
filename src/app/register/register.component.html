@@ -1,0 +1,48 @@
+
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100"><br>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div id="reg" class="card" style="border-radius: 15px;">
+            <div class="card-body p-5" style="border:10px ridge rgba(48, 14, 1, 0.7) ;border-radius: 50px;">
+              <h2 class="text-uppercase text-center mb-5">REGISTER</h2>
+
+              <form [formGroup]="registerForm" style="align-items: center;">
+
+                <div class="form-outline mb-4">
+                  <input type="text" formControlName="fname" class="form-control form-control-lg" placeholder="First Name"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="email" formControlName="lname" class="form-control form-control-lg" placeholder="Last Name"/>
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" formControlName="uid" class="form-control form-control-lg"  placeholder=" User Id"/>
+                 
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" formControlName="pswd" class="form-control form-control-lg" placeholder="Password" />
+                  
+                </div>
+
+               
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-primary btn-block btn-lg gradient-custom-4 text-body" (click)="Register()">Register</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a routerLink=''
+                    class="fw-bold text-body"><u>Login here</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
